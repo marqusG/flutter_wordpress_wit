@@ -43,6 +43,7 @@ export 'requests/params_comment_list.dart';
 export 'requests/params_media_list.dart';
 export 'requests/params_page_list.dart';
 export 'requests/params_post_list.dart';
+export 'requests/params_acadp_listing_list.dart';
 export 'requests/params_tag_list.dart';
 export 'requests/params_user_list.dart';
 export 'schemas/avatar_urls.dart';
@@ -271,7 +272,8 @@ class WordPress {
       bool fetchTags = false,
       bool fetchFeaturedMedia = false,
       bool fetchAttachments = false,
-      String postType = "posts",
+      // String postType = "posts",
+      String postType = "acadp_listings",
       bool fetchAll = false}) async {
     int bulkBatchNum = 100;
 
